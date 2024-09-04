@@ -1,7 +1,7 @@
 <?php
 
 // Classe prodotti
-class product{
+class Product{
 
     // Variabili d'istanza
     public $name;
@@ -28,8 +28,14 @@ class product{
                 <h3>{$this->name}</h3>
                 <p>Prezzo: \${$this->price}</p>
                 <p>Categoria: {$this->category->name} {$this->category->icon}</p>
-                <p>Descrizione: {$this->description}</p>
-            </div>";
-    }
+                <p>Descrizione: {$this->description}</p>";
+            
+                if ($this instanceof Food) {
+                    echo "<p>Tipo: {$this->type}</p>";
+                    echo "<p>Dimensioni: {$this->size}</p>";
+                }
+
+            echo "</div>";
+}
 }
 
