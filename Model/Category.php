@@ -1,20 +1,19 @@
 <?php
 
+// Classe categorie
 class Category{
 
     // Variabili d'istanza
     public $name;
     public $icon;
-    public $age;
 
 
     // Costruttore
-    function __construct ($_name, $_age){
+    function __construct ($_name, $_icon){
         $this->name = $_name;
-        $this->age = $_age;
+        $this->icon = $_icon;
     }
 }
 
-function getInfo(){
-    return  $this->name . ' ' . $this->age;
-}
+$dogCategory = new Category('Cane', '<i class="fa-solid fa-dog"></i>');
+$catCategory = new Category('Gatto', '<i class="fa-solid fa-cat"></i>');
