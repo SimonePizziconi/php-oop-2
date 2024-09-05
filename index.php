@@ -3,12 +3,15 @@
 require_once __DIR__ . '/Model/Category.php';
 require_once __DIR__ . '/Model/Product.php';
 require_once __DIR__ . '/Model/Food.php';
+require_once __DIR__ . '/Model/Kennel.php';
+require_once __DIR__ . '/Model/Toy.php';
 require_once __DIR__ . '/Data/db.php';
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +19,17 @@ require_once __DIR__ . '/Data/db.php';
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <!-- Ciclo per stampare carte -->
-    <?php foreach($db as $card): ?>
+    <?php foreach ($db as $card): ?>
         <?php $card->createdCard(); ?>
     <?php endforeach; ?>
 
 </body>
+
 </html>
 </body>
+
 </html>

@@ -1,7 +1,6 @@
 <?php
 
-// Creazione classe estesa per i prodotti
-class Food extends Product
+class Kennel extends Product
 {
 
     public $type;
