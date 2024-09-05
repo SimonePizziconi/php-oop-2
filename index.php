@@ -22,10 +22,12 @@ require_once __DIR__ . '/Data/db.php';
 
 <body>
 
-    <!-- Ciclo per stampare carte -->
-    <?php foreach ($db as $card): ?>
-        <?php $card->createdCard(); ?>
-    <?php endforeach; ?>
+    <div class="container">
+        <!-- Ciclo per stampare carte -->
+        <?php foreach ($db as $card): ?>
+            <?php $card->createdCard(); ?>
+        <?php endforeach; ?>
+    </div>
 
 </body>
 

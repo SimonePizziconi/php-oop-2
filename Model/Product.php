@@ -49,4 +49,13 @@ class Product
 
         echo "</div>";
     }
+
+    public function setName($_name)
+    {
+        $this->name = $_name;
+
+        if (empty($_name) || strlen($_name) < 3) {
+            throw new Exception('Il nome deve contenere almeno tre caratteri');
+        }
+    }
 }
